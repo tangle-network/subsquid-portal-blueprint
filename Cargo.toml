@@ -38,7 +38,7 @@ futures = { version = "0.3.31" }
 axum = "0.7"
 hyper = "1.4"
 reqwest = { version = "0.12", features = ["json"] }
-dashmap = "5.5"
+dashmap = "6.1"
 governor = "0.6"
 rand = "0.8"
 rsa = "0.9.8"
