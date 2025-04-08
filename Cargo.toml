@@ -1,0 +1,45 @@
+[workspace]
+resolver = "2"
+members = ["subsquid-portal-blueprint-lib", "subsquid-portal-blueprint-bin"]
+
+[workspace.package]
+version = "0.1.0"
+description = "A Tangle Blueprint for running Subsquid Portals"
+edition = "2024"
+authors = ["Drew Stone <drewstone329@gmail.com>"]
+license = "MIT OR Apache-2.0"
+homepage = "https://tangle.tools"
+repository = "https://github.com/tangle-network/subsquid-portal-blueprint"
+readme = "README.md"
+categories = ["cryptography", "cryptography::cryptocurrencies"]
+keywords = ["tangle", "blueprint", "avs"]
+
+[workspace.dependencies]
+subsquid-portal-blueprint-lib = { path = "subsquid-portal-blueprint-lib" }
+
+blueprint-sdk = { git = "https://github.com/tangle-network/blueprint.git", default-features = false }
+tokio = { version = "1.43.0" }
+tokio-stream = { version = "0.1.14" }
+color-eyre = "0.6.3"
+tower = { version = "0.5.2" }
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
+tracing = "0.1.41"
+
+dockworker = { git = "https://github.com/tangle-network/dockworker" }
+regex = "1.11.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+thiserror = "2.0"
+uuid = { version = "1.0", features = ["v4"] }
+futures-util = { version = "0.3" }
+futures = { version = "0.3.31" }
+
+axum = "0.7"
+hyper = "1.4"
+reqwest = { version = "0.12", features = ["json"] }
+dashmap = "5.5"
+governor = "0.6"
+rand = "0.8"
+rsa = "0.9.8"
+base64 = "0.22.1"
