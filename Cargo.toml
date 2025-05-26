@@ -18,7 +18,7 @@ keywords = ["tangle", "blueprint", "avs"]
 subsquid-portal-blueprint-lib = { path = "subsquid-portal-blueprint-lib" }
 
 blueprint-sdk = { git = "https://github.com/tangle-network/blueprint.git", default-features = false }
-tokio = { version = "1.43.0" }
+tokio = { version = "1.45.1" }
 tokio-stream = { version = "0.1.14" }
 color-eyre = "0.6.3"
 tower = { version = "0.5.2" }
